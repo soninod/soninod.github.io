@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "push-master": "git subtree split --prefix dist -b master && git push -f origin master:master && git branch -D master"
   },
   "keywords": [],
   "author": "",
