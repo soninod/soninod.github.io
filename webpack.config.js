@@ -5,7 +5,7 @@ const webpack = require('webpack')
 module.exports = {
     entry: './src/js/index.js',
     output: {
-        filename: 'main.js',
+        filename: "main-[contenthash].js",
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
